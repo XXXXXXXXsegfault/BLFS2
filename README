@@ -1,0 +1,29 @@
+BLFS2 -- A Simple Linux System for x86_64
+
+Building
+
+1. Build Linux 5.10.56
+
+This system is based on Linux 5.10.56. You should first download the Linux
+5.10.56 package and unpack it to the "src" directory. Next, rename the Linux
+source directory to "linux". Then switch to the "src" directory and run
+"./build_linux.sh".
+
+2. Build SCC
+
+SCC is a simple C subset compiler. To build it, simply switch to the "scc"
+directory and enter "make".
+
+NOTE: There may be some bugs in SCC. You can modify the SCC source if needed.
+
+3. Switch to Root of BLFS2 Source and Enter "make"
+
+Installing (root required)
+
+NOTE: Installing this system will overwrite an entire disk.
+
+To install this system to your device, you should first switch to root of 
+BLFS2 source, then run "build/install.run <YOUR_DEVICE>". If your installation
+succeeds, it will print a "Success" message.
+
+
